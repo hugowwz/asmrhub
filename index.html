@@ -2,226 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASMR Hub</title>
 </head>
 <body>
+    <nav class="navbar">
 
-    <nav>
+        <a href="#" class="label-logo">ASMR Hub</a>
 
-        <ul class="ul_navbar">
+        <input class="search-input" type="text" placeholder="Search">
 
-            <img src="logo.png" class="logo">
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">COTEGORIES</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">TENDENCY</a></li>
+            </ul>
+        </div>
 
-                <li class="li_navbar"><a href="#">TENDANCES</a></li>
-                <li class="li_navbar"><a href="#">TENDANCES</a></li>
-                <li class="li_navbar"><a href="#">TENDANCES</a></li>
-                <li class="li_navbar"><a href="#">TENDANCES</a></li>
-
-        </ul>
+        <img src="menu.png" alt="menu" class="menu-hamburger">
 
     </nav>
-
-    <main>
-
-        <header>
-
-            <h1 class="h1_welcome">WELCOME</h1>
-
-            <hr class="hr-header">
-    
-        </header>
-
-        <div class="content">
-
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-            <p>A</p><br>
-
-        </div>
-    
-        <div class="account"> 
-    
-            <p class="labelAcc_first"> Do you have an account ? <a class="aAcc" href="login.html">Log In</a></p>
-    
-            <p class="labelAcc">You don't have an account ? <a class="aAcc" href="signup.html">Sign Up</a></p>
-    
-        </div>
-
-    </main>
-
-    <!--<hr class="hr_footer">-->
-
-    <footer>
-
-        <ul class="ul_faq">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Legal Notice</a></li>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-
-        <p class="copyright">ASMR Hub &copy; All Rights Reserved 2022-2023</p>
-
-    </footer>
-
-
 </body>
 
 <style>
 
-    .logo {
-        width: 250px;
-    }
+.search-input {
+    background: none;
+    padding: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    border-color: white;
+    color: white;
+}
 
-    /* .content {
-    } */
+.search-input:hover {
+    background: none;
+    padding: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.562);
+    padding-right: 90px;
+    transition: 0.4s;
+}
 
-    .hr-header {
-        border-color: rgb(153, 42, 208);
-        width: 50px;
-    }
+.search-input:focus {
+    outline: none;
+    background: none;
+    padding: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.562);
+    padding-right: 90px;
+    transition: 0.4s;
+}
 
-    .label_title {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: rgb(153, 42, 208);
-        font-size: 30px;
-        letter-spacing: 5px;
-    }
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.562);
+    opacity: 1;
+}
 
-    .li_navbar {
-        margin-top: 9px;
-        margin-left: 50px;
-        padding: 10px;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 
-    .ul_navbar{
-        margin: 0;
+.label-logo {
+    font-size: 2em;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    margin: 10px;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li:hover{
+    margin: 0 25px;
+    color: rgba(255, 255, 255, 0.562);
+}
+
+   .navbar {
+    background: none;
+    /* background-color: #272727; */
+    position: absolute;                 /* FIXED */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between; /* Faire en sorte de séparé deux div */
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.navbar a {
+    color: white;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #9428C4;
+    /* background-image: url(backgrounf-logo.png);
+    background-size: cover; */
+}
+
+@media screen and (max-width: 980px) {
+    .navbar {
         padding: 0;
-        list-style: none;
-        display: flex;
     }
 
-    nav {
-        background-color: #272727; /* #951D91 */
-        margin: 0;
-        /* padding: 15px;
-        position: fixed; */
+    .search-input {
+        display: none;
+    }
+    
+    .nav-links .label-logo {
+        position: absolute;
+        top: 40px;
+        left: 30px;
     }
 
-    /* .input_search {
-        background: none;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-bottom: 1px solid;
-        border-color: #fff;
-    } */
-
-    /* nav{
-        position: fixed;
-        background-color: #272727;
-    } */
-
-    header{
-        padding-top: 10px;
+    .navbar .menu-hamburger {
+        display: block;
     }
 
-    .ul_faq {
-        margin-top: 18px;
-        font-size: 12px;
-    }
-
-    .labelAcc_first {
-        margin-left: 0px;
-        font-size: 14px;
-    }
-
-    .labelAcc {
-        margin-left: 20px;
-        font-size: 14px;
-    }
-
-    .account{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100vh;
         justify-content: center;
-        margin-bottom: 27px;
-    }
-
-    li{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    a{
-        text-decoration: none;
-        color: #a5b2b2;
-        margin: 2px;
-    }
-
-    .ul_faq{
-        margin: 0;
-        padding: 0;
-        list-style: none;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5 ease;
     }
 
-    main{
-        background-color: rgb(25, 24, 24);
-        color: rgb(153, 42, 208);
+    .nav-links.mobile-menu {
+        margin-left: 0;
     }
 
-    footer{
-        background-color: rgb(25, 24, 24);
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .copyright{
-        color: white;
-        margin-top: 30px;
-        text-align: center;
-        font-size: 11px;
-        margin-bottom: 30px;
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
     }
-
-    .aAcc{
-        text-decoration: none;
-        color: rgb(255, 255, 0);
-        margin-left: 3px;
-    }
-
-    .h1_welcome{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 50px;
-        letter-spacing: 5px;
-        text-align: center;
-    }
-
-    body{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: rgb(25, 24, 24); /*#272727*/
-        margin: 0px;
-        padding: 0px;
-    }
-
-
-
+}
 
 </style>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 
 </html>
