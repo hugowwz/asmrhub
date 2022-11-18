@@ -22,10 +22,87 @@
 
         <img src="menu.png" alt="menu" class="menu-hamburger">
 
-    </nav>
+    </nav><br>
+
+    <main>
+
+        <p class="open">The site is opening soon</p>
+
+    </main>
+
+    <hr style="border-color: white; width: 300px; margin: auto;"> <!-- margin: auto; pour centrer n'importe quel element --> 
+
+    <footer>
+
+        <ul class="ul_faq">
+
+            <li class="li_faq"><a class="a_faq" href="#">About</a></li>
+            <li class="li_faq"><a class="a_faq" href="#">Account</a></li>
+            <li class="li_faq"><a class="a_faq" href="#">Legal Notice</a></li>
+            <li class="li_faq"><a class="a_faq" href="#">Terms of use</a></li>
+            <li class="li_faq"><a class="a_faq" href="#">Contact us</a></li>
+            <li class="li_faq"><a class="a_faq" href="#">Help Center</a></li>
+            <li class="li_faq"><a class="a_faq" href="#">FAQ</a></li>
+
+        </ul>
+
+        <p class="copyright">ASMR Hub &copy; All Rights Reserved 2022-2023</p>
+
+    </footer>
+
 </body>
 
 <style>
+
+
+.copyright{
+    font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-top: 30px;
+        font-size: 11px;
+        margin-bottom: 30px;
+        text-align: center;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.ul_faq {
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+.li_faq{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.a_faq{
+    text-decoration: none;
+    color: #a5b2b2;
+    margin: 2px;
+}
+
+.ul_faq{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin-bottom: 80px;
+    margin-top: 150px;
+    /* margin-left: 70px; */
+}
+
+.open {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+}
 
 .search-input {
     background: none;
@@ -103,7 +180,7 @@
     color: rgba(255, 255, 255, 0.562);
 }
 
-   .navbar {
+.navbar {
     background: none;
     /* background-color: #272727; */
     position: absolute;                 /* FIXED */
@@ -112,7 +189,6 @@
     justify-content: space-between; /* Faire en sorte de séparé deux div */
     width: 100%;
     box-sizing: border-box;
-
 }
 
 .navbar a {
