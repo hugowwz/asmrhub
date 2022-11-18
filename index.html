@@ -4,22 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASMR HUB</title>
+    <title>ASMR Hub</title>
 </head>
 <body>
 
+    <nav>
+
+        <ul class="ul_navbar">
+
+            <img src="C:/Users/Hugow/Desktop/DEV/web/github/MyBlog/logo.png" class="logo">
+
+                <li class="li_navbar"><a href="#">TENDANCES</a></li>
+                <li class="li_navbar"><a href="#">TENDANCES</a></li>
+                <li class="li_navbar"><a href="#">TENDANCES</a></li>
+                <li class="li_navbar"><a href="#">TENDANCES</a></li>
+
+        </ul>
+
+    </nav>
 
     <main>
 
         <header>
 
             <h1 class="h1_welcome">WELCOME</h1>
+
+            <hr class="hr-header">
     
         </header>
+
+        <div class="content">
+
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+            <p>A</p><br>
+
+        </div>
     
         <div class="account"> 
     
-            <p class="labelAcc"> Do you have an account ? <a class="aAcc" href="login.html">Log In</a></p>
+            <p class="labelAcc_first"> Do you have an account ? <a class="aAcc" href="login.html">Log In</a></p>
     
             <p class="labelAcc">You don't have an account ? <a class="aAcc" href="signup.html">Sign Up</a></p>
     
@@ -41,7 +73,7 @@
             <li><a href="#">FAQ</a></li>
         </ul>
 
-        <p class="copyright">&copy; All Rights Reserved 2022-2023</p>
+        <p class="copyright">ASMR Hub &copy; All Rights Reserved 2022-2023</p>
 
     </footer>
 
@@ -50,6 +82,59 @@
 
 <style>
 
+    .logo {
+        width: 250px;
+    }
+
+    /* .content {
+    } */
+
+    .hr-header {
+        border-color: rgb(153, 42, 208);
+        width: 50px;
+    }
+
+    .label_title {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(153, 42, 208);
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .li_navbar {
+        margin-top: 9px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+
+    .ul_navbar{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    nav {
+        background-color: #272727; /* #951D91 */
+        margin: 0;
+        /* padding: 15px;
+        position: fixed; */
+    }
+
+    /* .input_search {
+        background: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid;
+        border-color: #fff;
+    } */
+
+    /* nav{
+        position: fixed;
+        background-color: #272727;
+    } */
+
     header{
         padding-top: 10px;
     }
@@ -57,6 +142,11 @@
     .ul_faq {
         margin-top: 18px;
         font-size: 12px;
+    }
+
+    .labelAcc_first {
+        margin-left: 0px;
+        font-size: 14px;
     }
 
     .labelAcc {
@@ -70,6 +160,7 @@
         list-style: none;
         display: flex;
         justify-content: center;
+        margin-bottom: 27px;
     }
 
     li{
@@ -83,7 +174,7 @@
         margin: 2px;
     }
 
-    ul{
+    .ul_faq{
         margin: 0;
         padding: 0;
         list-style: none;
@@ -105,6 +196,7 @@
         margin-top: 30px;
         text-align: center;
         font-size: 11px;
+        margin-bottom: 30px;
     }
 
     .aAcc{
@@ -123,8 +215,8 @@
     body{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: rgb(25, 24, 24); /*#272727*/
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
     }
 
 
