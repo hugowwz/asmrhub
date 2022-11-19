@@ -223,6 +223,11 @@ footer {
     margin-right: 10px;
 }
 
+.li_faq:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
 .a_faq{
     text-decoration: none;
     color: #a5b2b2;
@@ -320,6 +325,11 @@ main {
     margin: 0 25px;
 }
 
+.navbar .nav-links ul li:hover {
+    text-decoration-line: underline;
+    transition: 0.4s;
+}
+
 .navbar .nav-links ul li:hover{
     margin: 0 25px;
     color: rgba(255, 255, 255, 0.562);
@@ -347,6 +357,20 @@ body {
     /* background-image: url(backgrounf-logo.png);
     background-size: cover; */
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #ffffff, transparent);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #e1a5e1, transparent);
+}
+
 
 @media screen and (max-width: 980px) {
     .navbar {
