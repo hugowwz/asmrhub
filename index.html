@@ -324,12 +324,13 @@ main {
 .navbar {
     background: none;
     /* background-color: #272727; */
-    position: absolute;                 /* FIXED */
+    position: fixed;                 /* FIXED */
     padding: 30px;
     display: flex;
     justify-content: space-between; /* Faire en sorte de séparé deux div */
     width: 100%;
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
 }
 
 .navbar a {
