@@ -30,6 +30,48 @@
 
     </main>
 
+    <hr style="border-color: white; width: 300px; margin: auto; margin-bottom: 35px; margin-top: 50px;">
+
+    <div class="formulaire">
+
+        <div class="login">
+
+            <p>Login</p>
+
+            <form class="form-login">
+
+                <input class="input_type" type="text" placeholder="Username"><br><br><br>
+
+                <input class="input_type" type="password" placeholder="Password"><br><br><br>
+
+                <input class="input_submit" type="submit" name="submit" id="submit" value="SUBMIT">
+
+            </form>
+    
+        </div>
+    
+        <div class="signup">
+    
+            <p>Sign Up</p>
+
+            <form class="form-signup">
+
+                <input class="input_type" type="email" placeholder="E-Mail"><br><br><br>
+
+                <input class="input_type" type="text" placeholder="Username"><br><br><br>
+
+                <input class="input_type" type="password" placeholder="Password"><br><br><br>
+
+                <input class="input_type" type="password" placeholder="Confirm Password"><br><br><br>
+
+                <input class="input_submit" type="submit" name="submit" id="submit" value="SUBMIT">
+
+            </form>
+    
+        </div>
+
+    </div>
+
     <hr style="border-color: white; width: 300px; margin: auto;"> <!-- margin: auto; pour centrer n'importe quel element --> 
 
     <footer>
@@ -54,14 +96,113 @@
 
 <style>
 
+.input_submit{
+    margin-top: 15px;
+    background: none;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input_submit:hover {
+    background-color: #e0c9eb;
+    border: 2px solid;
+    border-color: #8011af;
+    color: #8011af;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.input_type {
+    background: none;
+    padding: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    border-color: white;
+    position: absolute;
+    color: white;
+}
+
+.input_type:hover {
+    background: none;
+    padding: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.562);
+    padding-right: 90px;
+    transition: 0.4s;
+}
+
+.input_type:focus {
+    outline: none;
+    background: none;
+    padding: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.562);
+    padding-right: 90px;
+    transition: 0.4s;
+    /* margin-top: 15px; */
+}
+
+.input_type::placeholder {
+    color: rgba(255, 255, 255, 0.562);
+    opacity: 1;
+}
+
+.signup p {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.login p {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.login {
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.signup {
+    margin-right: 20%;
+    margin-bottom: 30px;
+}
+
+.formulaire {
+    box-shadow: 0 12px 16px 0 #b85ae0, 0 17px 50px 0 #b85ae0;
+    background-color: #a73ed4;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    margin-bottom: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 1rem;
+}
 
 .copyright{
     font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        margin-top: 30px;
-        font-size: 11px;
-        margin-bottom: 30px;
-        text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 11px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 footer {
@@ -93,8 +234,8 @@ footer {
 }
 
 main {
-    margin-bottom: 80px;
-    margin-top: 150px;
+    margin-bottom: 330px;                                                       /* HERE */
+    margin-top: 330px; 
     /* margin-left: 70px; */
 }
 
