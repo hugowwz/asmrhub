@@ -37,7 +37,7 @@
 
         <div class="line">
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -51,7 +51,7 @@
 
         <div class="title-line">
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -65,7 +65,7 @@
 
         <div class="line">
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -79,7 +79,7 @@
 
         <div class="title-line">
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -93,7 +93,7 @@
 
         <div class="line">
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -107,7 +107,7 @@
 
         <div class="title-line">
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -121,7 +121,7 @@
 
         <div class="line">
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -135,7 +135,7 @@
 
         <div class="title-line">
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -149,7 +149,7 @@
 
         <div class="line">
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -163,7 +163,7 @@
 
         <div class="title-line">
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -246,7 +246,23 @@
 </body>
 
 <style>
-    
+
+
+.video-type-first {
+    box-shadow: 0 12px 16px 0 #b85ae0, 0 17px 50px 0 #b85ae0;
+    border-radius: 0.5rem;
+    background-image: url("video-unavailable.png");
+    background-size: cover;
+    padding-right: 16%;
+    padding-top: 10%;
+    margin: auto;
+}
+
+.video-type-first:hover {
+    box-shadow: 0 12px 16px 0 #cea7df, 0 17px 50px 0 #cea7df;
+    cursor: pointer;
+    transition: 0.5s;
+}    
 
 /* .video-title {
     color: white;
@@ -266,6 +282,13 @@
 }
 
 .title-type {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.title-type-first {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: rgb(255, 255, 255);
@@ -565,7 +588,15 @@ body {
 }
 
 
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
+    .title-type {
+        display: none;
+    }
+
+    .video-type {
+        display: none;
+    } */
+/*   
     .navbar {
         padding: 0;
     }
@@ -611,18 +642,18 @@ body {
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;
-    }
+    } */
 }
 
 </style>
 
 <script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
+    // const menuHamburger = document.querySelector(".menu-hamburger")
+    // const navLinks = document.querySelector(".nav-links")
 
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
+    // menuHamburger.addEventListener('click',()=>{
+    // navLinks.classList.toggle('mobile-menu')
+    // })
 
     function blockAccess(event){
         if(event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73)){
