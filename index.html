@@ -39,7 +39,7 @@
 
             <div class="video-type-first"></div>
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -53,7 +53,7 @@
 
             <a href="#" class="title-type-first">Video Unavailable</a>
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -67,7 +67,7 @@
 
             <div class="video-type-first"></div>
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -81,7 +81,7 @@
 
             <a href="#" class="title-type-first">Video Unavailable</a>
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -95,7 +95,7 @@
 
             <div class="video-type-first"></div>
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -109,7 +109,7 @@
 
             <a href="#" class="title-type-first">Video Unavailable</a>
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -123,7 +123,7 @@
 
             <div class="video-type-first"></div>
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -137,7 +137,7 @@
 
             <a href="#" class="title-type-first">Video Unavailable</a>
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -151,7 +151,7 @@
 
             <div class="video-type-first"></div>
 
-            <div class="video-type"></div>
+            <div class="video-type-first"></div>
 
             <div class="video-type"></div>
 
@@ -165,7 +165,7 @@
 
             <a href="#" class="title-type-first">Video Unavailable</a>
 
-            <a href="#" class="title-type">Video Unavailable</a>
+            <a href="#" class="title-type-first">Video Unavailable</a>
 
             <a href="#" class="title-type">Video Unavailable</a>
 
@@ -588,14 +588,68 @@ body {
 }
 
 
-/* @media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
+    .search-input {
+        background: none;
+        padding: 6px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid;
+        border-color: white;
+        color: white;
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        font-size: 25px;
+    }
+
+    .search-input:hover {
+        background: none;
+        padding: 6px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid;
+        color: white;
+        border-color: rgba(255, 255, 255, 0.562);
+        padding-right: 90px;
+        transition: 0.4s;
+    }
+
+    .search-input:focus {
+        outline: none;
+        background: none;
+        padding: 6px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid;
+        color: white;
+        border-color: rgba(255, 255, 255, 0.562);
+        padding-right: 90px;
+        transition: 0.4s;
+    }
+
+    .label-logo {
+        font-size: 5em;
+        margin: 20px;
+    }
+
     .title-type {
         display: none;
+    }
+
+    .video-type-first {
+        padding-right: 32%;
+        padding-top: 20%;
     }
 
     .video-type {
         display: none;
     }
+
+    /*
 
     .navbar {
         padding: 0;
@@ -603,20 +657,22 @@ body {
 
     .search-input {
         display: none;
-    }
+    } */
     
     .nav-links .label-logo {
-        position: absolute;
+        /* position: absolute;
         top: 40px;
-        left: 30px;
+        left: 30px; */
+        display: none;
     }
 
     .navbar .menu-hamburger {
-        display: block;
+        /* display: block; */
+        display: none;
     }
 
     .nav-links {
-        top: 0;
+        /* top: 0;
         left: 0;
         position: absolute;
         backdrop-filter: blur(10px);
@@ -626,23 +682,27 @@ body {
         display: flex;
         align-items: center;
         margin-left: -100%;
-        transition: all 0.5 ease;
+        transition: all 0.5 ease; */
+        display: none;
     }
 
     .nav-links.mobile-menu {
-        margin-left: 0;
+        /* margin-left: 0; */
+        display: none;
     }
 
     .nav-links ul {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; */
+        display: none;
     }
 
     .navbar .nav-links ul li {
-        margin: 25px 0;
-        font-size: 1.2em;
-    } */
+        /* margin: 25px 0;
+        font-size: 1.2em; */
+        display: none;
+    }
 }
 
 </style>
@@ -655,15 +715,15 @@ body {
     // navLinks.classList.toggle('mobile-menu')
     // })
 
-    function blockAccess(event){
-        if(event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73)){
-            event.preventDefault();
-        }
-    }
+    // function blockAccess(event){
+    //     if(event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73)){
+    //         event.preventDefault();
+    //     }
+    // }
 
-    document.addEventListener('keydown', blockAccess);
+    // document.addEventListener('keydown', blockAccess);
 
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    // document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 
 </html>
